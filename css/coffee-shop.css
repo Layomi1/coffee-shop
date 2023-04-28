@@ -1,0 +1,808 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 20px 70px ;
+    align-items: center;
+
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+
+}
+.logo figcaption {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu {
+    display: none;
+}
+ul{
+    display: flex;
+    
+}
+
+
+nav ul a:hover {
+    cursor: pointer;
+    background-color:rgb(165, 101, 5) ;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+}
+nav ul li a{
+    font-weight: 700;
+    margin: 0 15px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    align-self: center;
+    margin-bottom: 6px;
+    
+}
+.search {
+    display: flex; 
+    align-items: center;
+}
+.search i {
+    color: #fff;
+    width: 40px;  
+}
+.search-box {
+    position: absolute;
+    color: #b2adad;
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    
+}
+input[type=search] {
+    width: 100%;
+    font-size: 16px;
+    padding: 20px;
+    text-transform: capitalize;
+    border: none;
+    outline:none;
+    background-color: rgb(226, 221, 214, );;
+}
+
+.search i:first-child:hover{
+    background-color: rgb(165, 101, 5);
+    padding: 8px;
+    border-radius: 3px;
+}
+/* home */
+.home{
+    background: url(image/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+main{
+    display: grid;
+    gap: 60px;
+    grid-template-columns:  repeat(2, 1fr);
+    
+}
+
+.header-info {
+    grid-column: 1/2;
+}
+.header-img{
+    grid-column: 2/3;
+}
+.header-info h2 {
+    font-size: 46px;
+    color: rgb(165, 101, 5);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+}
+
+
+.header-info p{
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.header-img {
+    width: 100%;
+    height: 400px;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+p{
+    
+    font-size: 16px;
+}
+
+button {
+    background-color:rgb(165, 101, 5) ;
+    padding: 10px 25px;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+section {
+    padding: 40px 70px;
+    
+}
+
+/* about */
+.about-us{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.about{
+    display: flex;
+}
+.about-us p {
+    margin-bottom: 10px;
+
+}
+
+/* products */
+.products h3 {
+    text-align: center;
+}
+.catalogue{
+    display:flex ;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card {
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 3px rgb(0,0,0,0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.card-header{
+    background-color: #e3e3e3;
+    height: 260px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card-header img {
+    width: 200px;
+    height: 250px;
+}
+.card h5 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin:5px 0 0 0;
+    font-size: 16px;
+
+}
+.card-info {
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+    
+}
+.card-info button:nth-child(2){
+    border:2px solid rgb(165, 101, 5);
+    background: transparent;
+    color:#000 ;
+
+}
+
+.card-info button:nth-child(2):hover{
+    cursor: pointer;
+    background-color: rgb(165, 101, 5);
+    color: #fff;
+}
+
+/* customers */
+.customers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.customer-view{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+}
+.reviews {
+    width: 350px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 3px rgb(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px; 
+}
+.reviews:hover {
+    cursor: pointer;
+    background-color: rgba(165, 101, 5, 0.1);
+}
+.reviews p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.review-card i {
+    margin-bottom: 10px;
+}
+.reviews figcaption {
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 10px 0;
+    
+}
+.reviews img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+/*  contact */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+
+}
+.contact i {
+    color: #000;
+    margin-right: 10px;
+}
+
+.contact li{
+    color: #000;
+    line-height: 24px;
+    font-weight: 400;
+    
+}
+.coffee-shop,.support, 
+.view, .place,
+.footer-link,
+.guides {
+    display: flex;
+    flex-direction: column;
+    text-align: justify; 
+    text-transform: capitalize;
+    align-items: start;
+    
+}
+.coffee-shop h5,
+.support h5,
+.view h5,
+.place h5
+{
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 18px;
+}
+.social i {
+    background-color: rgb(165, 101, 5);
+    padding:8px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.social i:hover, .contact li:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: rgb(165, 101, 5);
+}
+.social i:hover{
+    background-color:rgba(165, 101, 5, 0.2); ;
+}
+
+footer {
+    background-color: rgba(165, 101, 5,0.2);
+    padding: 20px 70px;
+    text-align: center;
+    text-transform: capitalize;
+}
+footer span{
+    margin-left: 5px;
+}
+
+@media screen and (min-width: 769px)and (max-width:900px) {
+        .menu {
+            display: flex;
+            background-color: transparent;
+        }
+    
+        nav ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: grid;
+            width: 100%;
+            background-color: rgb(228, 214, 196 );
+            text-align: center;
+            padding: 10px 0;
+        }
+        .active {
+            transform: scaleY(0);
+        }
+        nav ul a li  {
+            margin: 10px 0;
+            color: #000;
+        }
+
+        nav ul a li:hover {
+            cursor: pointer;
+            background-color: rgba(193, 128, 32, 0.1);
+            color: #fff;
+    
+        }
+    
+        .search i {
+            color: #fff;
+            width: 40px;
+        }
+    
+        .search i:first-child:hover {
+            background-color: rgb(165, 101, 5);
+            padding: 8px;
+            border-radius: 3px;
+        }
+    
+        /* home */
+        .header-info p {
+            color: #fff;
+            margin-bottom: 8px;
+        }
+    
+        section {
+            padding: 40px;
+        }
+    
+        /* about */
+        .about-us {
+            gap: 10px;
+        }
+    
+         /* products * */
+    
+        .card {
+            width: 320px;
+            height: 350px;
+            
+        }
+    
+        
+    
+        /* customers */
+    
+        .reviews {
+            width: 320px;
+        }
+    
+        
+        /*  contact */
+        .contact {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 50px;
+            /* display: flex; */
+            /* gap: 80px; */
+            /* text-align: justify; */
+    
+        }
+    
+        .contact i {
+            color: #000;
+            margin-right: 10px;
+        }
+    
+        .contact li {
+            color: #000;
+            line-height: 24px;
+            font-weight: 400;
+    
+        }
+    
+        .coffee-shop,
+        .support,
+        .view,
+        .place,
+        .footer-link,
+        .guides {
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            text-transform: capitalize;
+            align-items: start;
+    
+        }
+    
+        .coffee-shop h5,
+        .support h5,
+        .view h5,
+        .place h5 {
+            margin-bottom: 10px;
+            text-align: justify;
+            font-size: 18px;
+        }
+    
+        .social i {
+            background-color: rgb(165, 101, 5);
+            padding: 8px;
+            margin-top: 10px;
+            border-radius: 3px;
+        }
+    
+        .social i:hover,
+        .contact li:hover {
+            cursor: pointer;
+            background-color: #fff;
+            color: rgb(165, 101, 5);
+        }
+    
+        .social i:hover {
+            background-color: rgba(165, 101, 5, 0.2);
+            ;
+        }
+    
+        footer {
+            background-color: rgba(165, 101, 5, 0.2);
+            padding: 20px 70px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    
+        footer span {
+            margin-left: 5px;
+        }
+    
+}
+
+/* small devices */
+@media screen and ( max-width:426px) {
+        .menu {
+                display: flex;
+                background-color: transparent;
+            }
+        
+            nav ul {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                display: grid;
+                width: 100%;
+                background-color: rgb(228, 214, 196);
+                text-align: center;
+                padding: 10px 0;
+            }
+        
+            .active {
+                transform: scaleY(0);
+            }
+        
+            nav ul a li {
+                margin: 10px 0;
+                color: #000;
+            }
+        
+            nav ul a li:hover {
+                cursor: pointer;
+                background-color: rgba(193, 128, 32, 0.1);
+                color: #fff;
+        
+            }
+        
+            .search i {
+                color: #fff;
+                width: 40px;
+            }
+        
+            .search i:first-child:hover {
+                background-color: rgb(165, 101, 5);
+                padding: 8px;
+                border-radius: 3px;
+            }
+    
+        /* home */
+        .home {
+            background-color: brown;
+            /* display: flex; */
+            height: 100vh;
+    
+        }
+    
+        main {
+            display: grid;
+            gap: 30px;
+            /* align-items: center;
+        justify-content: center; */
+        }
+    
+        h2 {
+            font-size: 46px;
+            color: rgb(165, 101, 5);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+    
+    
+        .header-info p {
+            color: #fff;
+            margin-bottom: 8px;
+        }
+    
+        h3 {
+            text-transform: uppercase;
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+    
+        p {
+    
+            font-size: 16px;
+        }
+    
+        button {
+            background-color: rgb(165, 101, 5);
+            padding: 10px 25px;
+            text-transform: capitalize;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #fff;
+        }
+    
+        section {
+            padding: 40px 70px;
+    
+        }
+    
+        /* about */
+        .about-us {
+            height: 400px;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .about-us p {
+            margin-bottom: 10px;
+    
+        }
+    
+        /* products */
+        .products h3 {
+            text-align: center;
+        }
+    
+        .catalogue {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    
+        .card {
+            width: 350px;
+            height: 350px;
+            background-color: #fff;
+            box-shadow: 0 2px 2px 3px rgb(0, 0, 0, 0.2);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .card-header {
+            background-color: #e3e3e3;
+            height: 260px;
+    
+        }
+    
+        .card-body h5 {
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            margin-bottom: 0;
+            font-size: 20px;
+    
+        }
+    
+        .card-info {
+            margin-top: 10px;
+            margin-bottom: 0;
+            display: flex;
+            padding: 0 30px;
+            justify-content: space-between;
+    
+        }
+    
+        .card-info button:nth-child(2) {
+            border: 2px solid rgb(165, 101, 5);
+            background: transparent;
+            color: #000;
+    
+        }
+    
+        .card-info button:nth-child(2):hover {
+            cursor: pointer;
+            background-color: rgb(165, 101, 5);
+            color: #fff;
+        }
+    
+        /* customers */
+        .customers {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+        }
+    
+        .customer-view {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+    
+        }
+    
+        .reviews {
+            width: 350px;
+            height: 250px;
+            background-color: #fff;
+            box-shadow: 0 2px 2px 3px rgb(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            border-radius: 5px;
+        }
+    
+        .reviews:hover {
+            cursor: pointer;
+            background-color: rgba(165, 101, 5, 0.1);
+        }
+    
+        .reviews p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    
+        .review-card i {
+            margin-bottom: 10px;
+        }
+    
+        .reviews figcaption {
+            font-weight: 700;
+            text-transform: capitalize;
+            margin: 10px 0;
+    
+        }
+    
+        .reviews img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+    
+        /*  contact */
+        .contact {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+    
+    
+        }
+    
+        .contact i {
+            color: #000;
+            margin-right: 10px;
+        }
+    
+        .contact li {
+            color: #000;
+            line-height: 24px;
+            font-weight: 400;
+    
+        }
+    
+        .coffee-shop,
+        .support,
+        .view,
+        .place,
+        .footer-link,
+        .guides {
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            text-transform: capitalize;
+            align-items: start;
+    
+        }
+    
+        .coffee-shop h5,
+        .support h5,
+        .view h5,
+        .place h5 {
+            margin-bottom: 10px;
+            text-align: justify;
+            font-size: 18px;
+        }
+    
+        .social i {
+            background-color: rgb(165, 101, 5);
+            padding: 8px;
+            margin-top: 10px;
+            border-radius: 3px;
+        }
+    
+        .social i:hover,
+        .contact li:hover {
+            cursor: pointer;
+            background-color: #fff;
+            color: rgb(165, 101, 5);
+        }
+    
+        .social i:hover {
+            background-color: rgba(165, 101, 5, 0.2);
+            ;
+        }
+    
+        footer {
+            background-color: rgba(165, 101, 5, 0.2);
+            padding: 20px 70px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    
+        footer span {
+            margin-left: 5px;
+        }
+        
+}
