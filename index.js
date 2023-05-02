@@ -1,7 +1,20 @@
 let search= document. querySelector('.search-box');
+let list = document.querySelector('.lists')
 
-
-document.querySelector('#searchIt').onclick= () => {
+document.querySelector('#explore').onclick= () => {
     search.classList.toggle('active');
-    console.log('done')
+    list.classList.remove('active');
+    
 }
+
+/*menu */ 
+document.querySelector('#menu').onclick= () => {
+    list.classList.toggle('active');
+    search.classList.remove('active');
+    
+}
+window.onscroll = ()=> {
+    search.classList.remove('active');
+    list.classList.remove('active');
+}
+// let navbar= document.querySelector('.nav');
