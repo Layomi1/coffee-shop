@@ -110,7 +110,6 @@ input[type=search] {
     text-transform: capitalize;
     border: none;
     outline:none;
-    /* background-color: rgb(226, 221, 214, ); */
     color: #b2adad;
     
 }
@@ -130,7 +129,7 @@ p {
 .home{
     width: 100%;
     min-height: 100vh;
-    background: url(image/banner.jpg);
+    background-image: url(image/banner.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -410,13 +409,18 @@ footer span{
         text-align: center;
         padding:  10px 20px;
         transition: 0.2s  ;
+        
     }
     nav ul.active {
         top: 100%;
     }
     nav ul li a {
-       margin :0 25px;
-       line-height: 30px;
+        margin :0 25px;
+        line-height: 30px;
+        color: #000;
+    }
+    nav ul li a:hover {
+        color: #fff;
     }
     .home{
         justify-content: center;
