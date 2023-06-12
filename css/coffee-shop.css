@@ -130,7 +130,7 @@ p {
 .home{
     width: 100%;
     min-height: 100vh;
-    background: url(image/banner.jpg);
+    background: url(../image/bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
